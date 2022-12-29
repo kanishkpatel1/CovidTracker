@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap'); 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #map{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1{
+
+  padding-left: 33%;
+            align-items: center;
+            background-color: rgb(71, 9, 4);
+            color: beige;
+
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        footer{
+            background: black;
+    color: white;
+    padding: 9px;
+    padding-left: 30%;
+
+            font-family: 'Balsamiq Sans', cursive;
+        }
+    </style>
+    <title>KanishkPatel Corona Map Tracker</title>
+</head>
+<body>
+    <div id='map'></div>
+    <header>
+        
+    </header>
+    <h1>
+        Covid cases tracker
+    </h1>
+    <footer>
+        copyright | All rights reserved     @royal_kanishk_patel
+    </footer>
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiaGFycnkxMjM0OTgiLCJhIjoiY2s4OXh1c3BqMGFsZzNvbXA3YmYyaGFhYSJ9.wmVMiMxlSqpzJPsj-UXr3Q';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom: 1,
+    center: [0,20]
+  });
+</script>
+
+<script src="index.js"></script>
+</html>
